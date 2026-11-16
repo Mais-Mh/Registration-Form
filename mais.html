@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form>
+            <div class="icon">
+            <img src="user.png" alt="User Icon">
+            </div>
+            <h2>Create Account</h2>
+            <p class="subtitle">Create your account and get started</p>
+
+         <div><label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname"
+                   placeholder="Enter your full name" required>
+</div>   
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"
+                   placeholder="At least 8 characters"
+                   minlength="8" required>
+            
+            <label for="birthdate">Date of Birth</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+            <option value="">Choose your country</option>
+             <option value="Palestine">Palestine</option>
+              <option value="Jordan">Jordan</option>
+          <option value="Egypt">Egypt</option>
+           </select>
+           
+<p>Study Type</p>
+
+<input type="radio" id="online" name="studyType" value="online" required>
+<label for="online">Online</label>
+
+<input type="radio" id="campus" name="studyType" value="campus">
+<label for="campus">On Campus</label>
+
+<p>Interests</p>
+
+<input type="checkbox" id="programming" name="interests" value="programming">
+<label for="programming">Programming</label>
+
+<input type="checkbox" id="design" name="interests" value="design">
+<label for="design">Web Design</label>
+
+<input type="checkbox" id="ai" name="interests" value="ai">
+<label for="ai">Artificial Intelligence</label>
+
+
+<label for="experience">Experience Level</label>
+<input type="range" id="experience" name="experience" min="1" max="10" value="5">
+
+
+<label for="photo">Profile Picture</label>
+<input type="file" id="photo" name="photo" accept="image/*">
+
+<label for="about">About Me</label>
+<textarea id="about" name="about" rows="4" placeholder="Tell us about yourself"></textarea>
+
+
+
+
+            <button type="submit">Create Account</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
